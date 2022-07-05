@@ -11,13 +11,6 @@ async function sessionThree() {
     .setChromeOptions(chromeOptions)
     .build();
 
-  driver.get("https://www.google.com/");
-
-  textbox = await driver.findElement(By.name("q"));
-  textbox.sendKeys("shan konduru", Key.RETURN);
-  driver.sleep(1000);
-
-  /*
   driver.get("https://www.facebook.com/");
 
   userName = await driver.findElement(By.name("email"));
@@ -32,7 +25,7 @@ async function sessionThree() {
 
   loginButton = driver.findElement(By.name("login"));
   loginButton.click();
-  */
+  driver.sleep(1000);
 }
 
 sessionThree();
